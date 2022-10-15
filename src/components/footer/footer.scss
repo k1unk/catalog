@@ -1,0 +1,186 @@
+.footer {
+  background-color: #eceaea;
+  height: 96px;
+
+  .footerWrapper {
+    max-width: 1256px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .footerWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .list {
+      display: flex;
+      margin: auto 0;
+
+      .item {
+        text-decoration: none;
+
+        font-size: 14px;
+        line-height: 21px;
+        color: #555555;
+        margin-right: 48px;
+        cursor: pointer;
+
+
+        &:hover {
+          color: #777777;
+        }
+
+      }
+    }
+
+    .phoneAndLocation {
+      display: flex;
+      align-items: center;
+
+      .phone {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 9px;
+          width: 14px;
+          height: 14px;
+        }
+      }
+
+      .location {
+        display: flex;
+        align-items: center;
+        margin-left: 54px;
+
+        img {
+          margin-right: 11px;
+          width: 10px;
+          height: 14px;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 1177px) {
+  .footer {
+    .footerWrapper {
+    }
+
+    .footerWrapper {
+      .list {
+        .item {
+          margin-right: 20px;
+          p {
+          }
+
+          &:hover {
+          }
+
+        }
+      }
+
+      .phoneAndLocation {
+        .phone {
+          img {
+          }
+        }
+
+        .location {
+          margin-left: 20px;
+          img {
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    height: auto;
+
+    .footerWrapper {
+      padding: 20px 0;
+      .list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        .item {
+          p {
+          }
+
+          &:hover {
+          }
+
+        }
+      }
+
+      .phoneAndLocation {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        align-self:center;
+        .phone {
+          img {
+          }
+        }
+
+        .location {
+          img {
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .footerWrapper {
+    }
+
+    .footerWrapper {
+      flex-direction: column;
+      font-size: 18px;
+      .list {
+        .item {
+          margin-right: 0;
+          font-size: 18px;
+          margin-top: 5px;
+          p {
+          }
+
+          &:hover {
+          }
+
+        }
+      }
+
+      .phoneAndLocation {
+        padding-top: 30px;
+        .phone {
+          img {
+          }
+        }
+
+        .location {
+          img {
+          }
+        }
+      }
+
+    }
+  }
+
+}

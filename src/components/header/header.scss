@@ -1,0 +1,186 @@
+.header {
+  background-color: #f6f3f3;
+  border-bottom: 1px solid #e1e1e1;
+
+  .headerWrapper {
+    max-width: 1256px;
+    margin: auto;
+    padding: 24px 20px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .list {
+    display: flex;
+    margin: auto;
+
+    .item {
+      font-size: 14px;
+      line-height: 21px;
+      color: #343030;
+      margin-right: 48px;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: #777777;
+      }
+
+    }
+  }
+
+  .searchForm {
+    width: 416px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      background-color: #f6f3f3;
+
+      color: #343030;
+      font-size: 14px;
+      line-height: 21px;
+      width: 100%;
+      padding-left: 16px;
+      border: 1px solid #e1e1e1;
+      //border: 1px solid #b5b5b5;
+      border-right: 0;
+      font-family: Merriweather;
+
+      &::placeholder {
+        color: #9f9f9f;
+      }
+
+      &:focus {
+        border: 1px solid #b5b5b5;
+        border-right: 0;
+        outline: none;
+      }
+    }
+
+    .button {
+      min-width: 122px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #403432;
+
+      color: #ffffff;
+      font-family: Merriweather;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+
+      &:hover {
+        background-color: #776763;
+        color: #F4F6F9;
+        cursor: default;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1046px) {
+  .header {
+    .headerWrapper {
+    }
+
+    .list {
+      .item {
+        margin-right: 20px;
+      }
+    }
+
+    .searchForm {
+      input {
+        &::placeholder {
+        }
+
+        &:focus {
+        }
+      }
+
+      .button {
+        &:hover {
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 905px) {
+  .header {
+    .headerWrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .list {
+      .item {
+        margin-right: 20px;
+      }
+    }
+
+    .searchForm {
+      margin: 20px auto auto auto;
+
+      input {
+        &::placeholder {
+        }
+
+        &:focus {
+        }
+      }
+
+      .button {
+        &:hover {
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 467px) {
+  .header {
+    .headerWrapper {
+    }
+
+    .list {
+      flex-direction: column;
+
+      .item {
+        font-size: 18px;
+        margin: 5px auto auto auto;
+      }
+    }
+
+    .searchForm {
+      margin: 20px auto auto auto;
+
+      width: auto;
+      input {
+        &::placeholder {
+
+        }
+
+        &:focus {
+        }
+      }
+
+      .button {
+        &:hover {
+        }
+      }
+    }
+  }
+
+}
